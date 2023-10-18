@@ -1,0 +1,13 @@
+[Unit]
+Description=tg-bot
+After=multi-user.target
+
+[Service]
+User=root
+Group=root
+Type=simple
+Restart=always
+ExecStart=/usr/bin/python3 /bot_rsu_edu/bot_schedule.py
+
+[Install]
+WantedBy=multi-user.target
